@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="macaronipng.png">
+    <title>Macaroni's website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body></body>
+    <div class="container">
+      <h1>
+        Hi, I am Macaroni, a hungarian developer who is kind of anonymous, but
+        this is my website.
+      </h1>
+      <dialog id="social">
+        <button id="closesocial" class="btn">Close</button>
+        <h1>Check out my socials!</h1>
+        <a href="https://discord.gg/Br9tZRzseg" class="btn">Discord</a>
+      </dialog>
+      <a href=""><img src="macaronipng.png" width="80px" height="80px" /></a>
+      <button id="theme" class="btn">Light Theme</button>
+      <button id="socialBtn" class="btn">Show Socials</button>
+      <h2>One of my friends:</h2>
+      <ul>
+        <li>
+          Ponik (role: one of my best fr., github usr: ponikgd, youtube:
+          @ponikgd)
+        </li>
+        <li>
+          TrickyArrasGames (role: my favorite best fr., youtube:
+          @trickyarrasgamesyt)
+        </li>
+        <li>
+          ContentArras (role: kinda a friend but dont talk much, youtube:
+          @contentarras)
+        </li>
+      </ul>
+      <h2>FAQ (frequently asked questions):</h2>
+      <details>
+        <summary>Which country do i live?</summary>
+        I live at austria.
+      </details>
+      <details>
+        <summary>Why do i speak hungarian?</summary>
+        Since my family speak hungarian, it counts that i am hungarian, but since i am born in germany, i could count as a german person.
+      </details>
+      <details>
+        <summary>Why am i anonymous?</summary>
+        I don't speak really much at people, thats why i even call myself
+        anonymous.
+      </details>
+      <details>
+        <summary>How old am i?</summary>
+        I am 14 years old.
+      </details>
+      <h2>Projects i am working on:</h2>
+      <i>None, sadly.</i>
+    </div>
+    <script>
+      const themeBtn = document.getElementById("theme")
+      const socialBtn = document.getElementById("socialBtn")
+      const social = document.getElementById("social")
+      const closesocial = document.getElementById("closesocial")
+      let dT = "true"
+      themeBtn.addEventListener("click", () => {
+        if (dT == "true") {
+          document.body.style.background = "rgb(212, 198, 0)"
+          themeBtn.textContent = "Dark Theme"
+          dT = "false"
+        } else {
+          document.body.style.background = "rgb(119, 111, 0)"
+          themeBtn.textContent = "Light Theme"
+          dT = "true"
+        }
+      })
+      socialBtn.addEventListener("click", ()=>{
+        social.showModal()
+      })
+      closesocial.addEventListener("click", ()=>{
+        social.close()
+      })
+    </script>
+  </body>
+</html>
