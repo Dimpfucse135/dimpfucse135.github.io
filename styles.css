@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+* {
+  font-family: Poppins;
+  transition: all 0.4s;
+}
+
+body {
+  background: rgb(119, 111, 0);
+}
+
+.container {
+  text-align: center;
+  text-shadow: 0 0 5px rgb(231, 216, 0);
+  color: rgb(255, 241, 39);
+}
+
+.container h1 {
+  background: rgb(175, 164, 0);
+  border-radius: 10px;
+  box-shadow: 0 0px 15px rgb(175, 164, 0);
+}
+
+.container ul {
+  list-style-type: none;
+}
+
+.container a img {
+  position: absolute;
+  bottom: 2%;
+  left: 95%;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0px 15px rgb(175, 164, 0);
+}
+
+.container a img:hover {
+  scale: 1.1;
+  box-shadow: 0 0px 25px rgb(175, 164, 0);
+}
+
+#theme,
+#socialBtn {
+  background: rgb(255, 238, 0);
+  box-shadow: 0 0px 10px rgb(255, 238, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  scale: 1.1;
+}
+
+#social {
+  background: yellow;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0px 10px yellow;
+}
+
+#social h1 {
+  background: none;
+  box-shadow: none;
+}
+
+#closesocial {
+  background: darkred;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0px 10px darkred;
+}
